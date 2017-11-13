@@ -9,7 +9,6 @@ use Qiniu\Auth;
 class QiniuController extends Controller
 {
     public function radioUpload(Request $request){
-        dd(1);
         $accessKey ="6uRB0cKNqK8Y-da8AlV7L5EvKt_bpeGXWcP9on3x";
         $secretKey = "hj0GN95V_b-wt5t06To7MEx2aE6UHHRC_QhuDvL6";
         $bucket = "shifangyunshui";
