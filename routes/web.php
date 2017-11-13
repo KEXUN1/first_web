@@ -21,3 +21,5 @@ Route::any('cache1', 'TestController@cache1');
 Route::any('cache2', 'TestController@cache2');
 Route::any('error', 'TestController@error');
 Route::any('queue', 'TestController@queue');
+Route::any('radioUpload', 'QiniuController@radioUpload');
+
