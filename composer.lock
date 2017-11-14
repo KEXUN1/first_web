@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "aec420d130bfb89c53baa6f17629bca4",
+    "content-hash": "45134b4501d6be3f6e8de34dc59bde5d",
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -783,6 +783,52 @@
                 "random"
             ],
             "time": "2017-09-27T21:40:39+00:00"
+        },
+        {
+            "name": "peinhu/aetherupload-laravel",
+            "version": "v1.0.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/peinhu/AetherUpload-Laravel.git",
+                "reference": "5f3d2a736593e163d69c04e1144e5b03bbdf28ba"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://files.phpcomposer.com/files/peinhu/AetherUpload-Laravel/5f3d2a736593e163d69c04e1144e5b03bbdf28ba.zip",
+                "reference": "5f3d2a736593e163d69c04e1144e5b03bbdf28ba",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5.9"
+            },
+            "suggest": {
+                "predis/predis": "Needed to support instant completion"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "AetherUpload\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Payne Hu",
+                    "email": "huyang110yahoo@gmail.com",
+                    "homepage": "http://www.2ndrenais.com",
+                    "role": "Manager"
+                }
+            ],
+            "description": "Upload large files for Laravel 上传 大文件 laravel包",
+            "keywords": [
+                "big",
+                "large",
+                "大文件"
+            ],
+            "time": "2017-09-11T05:42:49+00:00"
         },
         {
             "name": "psr/log",
