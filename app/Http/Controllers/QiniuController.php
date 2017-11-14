@@ -20,13 +20,14 @@ class QiniuController extends Controller
         // 生成上传 Token
         $token = $auth->uploadToken($bucket);
         // 要上传文件的本地路径
-        //$filePath = './img/ceshi.mp3';
+        $filePath = './img/ceshi.mp3';
         // 上传到七牛后保存的文件名
         $key = '笑傲江湖.mp3';
         // 初始化 UploadManager 对象并进行文件的上传。
         $uploadMgr = new UploadManager();
         // 调用 UploadManager 的 putFile 方法进行文件的上传。
-        list($ret, $err) = $uploadMgr->putFile($token, $key, $request->file('img'));
+//        list($ret, $err) = $uploadMgr->putFile($token, $key, $request->file('img'));
+        list($ret, $err) = $uploadMgr->putFile($token, $key, $filePath);
         echo "\n====> putFile result: \n";
         if ($err !== null) {
             var_dump($err);
