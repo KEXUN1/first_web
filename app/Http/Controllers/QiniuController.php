@@ -11,7 +11,7 @@ class QiniuController extends Controller
     public function radioUpload(Request $request){
         $accessKey ="cPkNshaC3txFX84Q_R9OoanMWd24QfHa8tvcS9G";
         $secretKey = "osdchuL7-bx7PNbwM0RQ1d26H_L1t9GWgX6IYzof";
-        $bucket = "shifangyunshui";
+        $bucket = "myself";
         // 构建鉴权对象
         $auth = new Auth($accessKey, $secretKey);
         // 生成上传 Token
