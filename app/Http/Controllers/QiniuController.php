@@ -10,7 +10,7 @@ class QiniuController extends Controller
 {
     public function radioUpload(Request $request){
 //        $accessKey ="6uRB0cKNqK8Y-da8AlV7L5EvKt_bpeGXWcP9on3x";
-        $accessKey ="cPkNshaC3txFX84Q_R9OoanMWd24QfHa8tvcS9G";
+        $accessKey ="-cPkNshaC3txFX84Q_R9OoanMWd24QfHa8tvcS9G";
 //        $secretKey = "hj0GN95V_b-wt5t06To7MEx2aE6UHHRC_QhuDvL6";
         $secretKey = "osdchuL7-bx7PNbwM0RQ1d26H_L1t9GWgX6IYzof";
 //        $bucket = "shifangyunshui";
