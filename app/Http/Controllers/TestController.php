@@ -8,9 +8,14 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Facades\Redis;
 
 class TestController extends Controller
 {
+    public function Test()
+    {
+        dd(Redis::get('res'));
+    }
     public function queue()
     {
         dispatch(new SendEmail('1193747537@qq.com'));
@@ -55,9 +60,5 @@ class TestController extends Controller
             $message->to('1193747537@qq.com');
         });
     }
-    public function Test()
-    {
-        $data['name'] = 'xiaodong';
-        Test::create($data);
-    }
+
 }
