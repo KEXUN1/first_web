@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Model\Test;
+use App\Jobs\GetRedis;
 use App\Jobs\SendEmail;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Cache;
@@ -14,7 +15,7 @@ class TestController extends Controller
 {
     public function Test()
     {
-        dd(Redis::get('res'));
+        Redis::lpush('number',1);
     }
     public function queue()
     {
