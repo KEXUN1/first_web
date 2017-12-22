@@ -15,9 +15,7 @@ class TestController extends Controller
 {
     public function Test()
     {
-        $tt = Test::get();
-        dd($tt);
-//        Redis::lpush('number',2);
+        Redis::lpush('number',2);
     }
     public function queue()
     {
